@@ -1,0 +1,151 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+
+}
+header {
+  background-color: black;
+  height: 56px;
+}
+header .banner {
+  width: 1520px;
+}
+nav {
+  width: 1520px;
+  height: 60px;
+  background-color: black;
+}
+
+nav .logo img {
+  width: 120px;
+  height: 60px;
+  float: left;
+  margin-left: 70px;
+}
+nav .menu {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 30px;
+
+}
+nav .menu a {
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 10px;
+  color:#fed100; 
+  font-weight: bold;
+}
+nav .menu .fas, .far, span {
+  padding-left: 80px;
+}
+nav .menu a:hover{
+  color: aqua;
+}
+section{
+  margin-top: 5px;
+  width: 1100px;
+  height: 1400px;
+  background-color: #fed100;
+  float: left;
+}
+section .content{
+  width: 250px;
+  height: 430px;
+  background-color: white;
+  display: inline-table ;
+  margin-top: 13px;
+  margin-left: 17px;
+  border-radius: 10px;
+
+}
+section .content img{
+  width: 240px;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+section .content h2{
+  padding-top: 40px;
+  padding-left: 20px;
+  font-size: 19px;
+  font-weight: normal;
+  color: gray;
+}
+section .content p{
+  font-family: arial;
+  font-size: 12px;
+  padding-left: 18px;
+  padding-top: 10px;
+  
+}
+section .content .money{
+  font-weight: bold;
+  color: #222222;
+  font-size: 15px;
+}
+section .content p:hover{
+  color: cornflowerblue;
+}
+section .content h2:hover{
+  color: fuchsia;
+}
+aside{
+  width: 400px;
+  float: left;
+  margin-top: 6px;
+  padding-left: 15px;
+}
+footer{
+  width: 1520px;
+  height: 250px;
+  clear: both;
+  border-top: 2px solid gray;
+  background-color: #fed100;
+}
+footer .support{
+  padding:15px 18px;
+  position: absolute;
+}
+footer .support ul{
+  list-style-type: none;
+
+}
+footer .support ul li{
+  padding-top: 8px;
+}
+footer .support ul li a{
+  text-decoration: none;
+  font-size: 17px;
+  color: gray;
+  font-weight: 700;
+}
+footer .hidden{
+  position: relative;
+  left: 400px;
+  top: -140px;
+}
+footer .footer_call{
+  position: relative;
+  left: 800px;
+  top: -280px;
+}
+footer .footer_link{
+  position: relative;
+  margin-left: 1100px;
+  margin-top: 50px;
+}
+footer .footer_link img{
+  width: 60px;
+  margin-top: 50px;
+  position: relative;
+  left: 170px;
+}
+
+
+
+
+
+
+
+
