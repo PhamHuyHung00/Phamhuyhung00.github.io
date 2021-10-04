@@ -45,11 +45,11 @@ nav .container .row .col-10 h1 {
 nav .container .row .col-2 {
   line-height: 60px;
 }
-nav .container .row .col-2 .btn {
+nav .container .row .col-2 .btn  {
   background-color: #1c4b92;
   color: #ffffff;
   width: 75%;
-  height: 30%;
+  height: 40%;
   border-radius: 40px;
   padding-top: 4px;
   font-size: 15px;
@@ -57,9 +57,18 @@ nav .container .row .col-2 .btn {
   border: none;
   cursor: pointer;
 }
-nav .container .row .col-2 .btn:hover {
-  background-color: #0a6dd4;
-  color: aqua;
+nav .container .row .col-2 .btn a{
+  text-decoration: none;
+  font-size:15px ;
+  background-color: #1c4b92;
+  color: #ffffff;
+  width: 75%;
+  height: 30%;
+  border-radius: 40px;
+  padding-top: 4px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
 }
 .section p {
   font-size: 35px;
