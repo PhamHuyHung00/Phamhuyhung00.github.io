@@ -1,185 +1,165 @@
-*{
-    margin:0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: Roboto,sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.header{
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    
+
+.header {
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
-.header .logo img{
-    width: 140px;
-    height: 60px;
+.header .container .row .col-7 img {
+  width: 28%;
+  height: 76px;
+}
+.header .container .row .col-5 .fas {
+  font-size: 20px;
+  padding-top: 30px;
+  padding-right: 10px;
+}
+.header .container .row .col-5 .far {
+  font-size: 20px;
+  padding-top: 30px;
+}
+.nav .container .row .col-12 .menu-main {
+  position: relative;
+  margin-bottom: 15px;
+}
+.nav .container .row .col-12 .menu-main li:hover .sub-menu {
+  display: block;
+}
+.nav .container .row .col-12 .menu-main li {
+  padding: 10px 12px;
+}
+.nav .container .row .col-12 .menu-main li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1d1d1d;
+  font-weight: 500;
+}
+.nav .container .row .col-12 .menu-main li a:hover {
+  color: orchid;
+  border-bottom: 2px solid black;
+}
+.sub-menu {
+  position: absolute;
+  top: 39px;
+  left: 0px;
+  border-top: 1px solid rgb(226 220 220);
+  display: none;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.sub-menu p:hover {
+  color: orange;
+  cursor: pointer;
+}
+.sub-menu .row .col-12 .title-12 {
+  font-size: 15px;
+  font-weight: 600;
+  padding-top: 25px;
+}
+.sub-menu .row .col-2 img {
+  padding-bottom: 20px;
+  padding-left: 5px;
+}
+.sub-menu .row .col-2 p {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.sub-menu .row .col-2 p:first-child {
+  font-size: 15px;
+  font-weight: 600;
+}
+.section .row .col-12 {
+  position: relative;
+  margin-top: 0;
+}
+.section .row .col-12 img {
+  filter: brightness(80%);
+  z-index: -1;
+  margin-top: -20px;
+}
+.section .row .col-12 p {
+  position: absolute;
+  top: 366px;
+  left: 688px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.section .row .col-12 span {
+  position: absolute;
+  top: 391px;
+  left: 698px;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.section .row .col-12 button {
+  position: absolute;
+  top: 434px;
+  left: 693px;
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.footer {
+  background-color: #1d1d1d;
+  bottom: 0px;
+  position: sticky;
+  z-index: -1;
+}
+.footer .container {
+    background-color: #1d1d1d;
+    margin-top: -20px;
+   
+}
+.footer .container .row .col-12 img {
+  width: 16%;
+  height: 121px;
+}
+.footer .container .row .col-3 .title-3{
+    color: #ffffff;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.footer .container .row .col-3 p{
+    color: gray;
     padding-top: 10px;
-    margin-left: 10px;
-    
-}
-.header .menu{
-    margin-right: 200px;
-    margin-left: 60px;
- 
-
-}
-.header .menu ul{
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
-    display: flex;
-    margin-right: 200px;
-}
-.header .menu ul li{
-    margin: 10px;
-    
-}
-.header .menu ul li a {
-    text-decoration: none;
-    color: black;   
-    font-size: 18px;
-    
-}
-.header .menu ul li a:hover{
-    color: red;
-}
-
-
-.fas{
-    color: black;
-    margin-top: 15px;
-    font-size: 12px;
-    padding-right: 15px;
-}
-.nav img{
-    width: 100%;
-}
-.section .text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    padding: 15px;
-    color: gray;
-}
-.section .text h3{
     padding-bottom: 5px;
-    color: #111111;
 }
-.content .product-list  li img:hover{
-    transform: scale(0.95);
-    transition: 1.3s;
-
-}
-.content .product-list{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.content .product-list  li{
-    list-style: none; 
+.footer .container .row .col-6{
+    border-top: 1px solid  #5a5656;
+    color: gray;
+    padding-top: 30px;
     padding-bottom: 20px;
-     overflow: hidden;
-    
 }
-.content .product-list  li a{
-    color: gray;
-    display: block;
-    text-decoration: none;
-    margin-left: 40px;
-    text-align: center;
-}
-.content .product-list  li a:hover{
-    color: orange;
-}
-.content .product-list  li img{
-    width: 320px;
-    
-    
-}
-
-.content .product-list  li .color{
-
-    cursor:pointer;  
-}
-
-
-.content .product-list  li p{
-    color:#111111;
-    padding-top: 6px;
-    text-align: center;
-}
-.content .product-list  li p:hover{
-    color: orange;
-}
-.section-two {
-    margin-top: 30px;
-    display: flex;
-    width: 1519px;
-}
-.section-two .text-list{
-    width: 379px;
-    height: 350px;
-    background-color: #252d3e;
-    color: #ffffff; 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-}
-.section-two .photo-list{
-    display: flex;
-
-}
-.section-two .photo-list img{
-    width: 379px;
-    height: 350px;
-}
-.section-two .photo-list-2{
-    display: inline-block;
-}
-.footer{
-    background-color: #f5f6f9;
-    padding: 50px 0px;
-    margin-top: 60px;
-}
-.footer ul{
-    display: flex;
-    list-style: none;
-}
-.footer ul li{
-    width: 25%;
-    text-align: center;
-    
-}
-.footer h2{
+.footer .container .row .col-6 .fab{
+    padding-left: 8px;
     font-size: 20px;
-    text-transform: uppercase;
-    padding-bottom: 5px;
 }
-.footer small{
-    color:#888;
+.footer .container .row .col-6 span{
+    color: #767676;
+    font-size: 13px;
 }
-.support{
-    padding: 20px 0;
-    margin-top: 20px;
-    background-color: #888;
+.footer .container .row .col-6 .title-6{
+    color: #ffffff;
+    font-size: 13px;
 }
-.support ul {
-    display: flex;
-     justify-content: space-around;
-     list-style: none;
+.btn:hover{
+  background-color: #767676;
 }
-.support h2 {
-    text-transform: uppercase;
-    font-size: 30px;
-    padding-bottom: 10px;
-}
-.support p{
-    border-bottom: 1px solid gray;
-    padding-bottom: 10px;
-}
-
-
-
