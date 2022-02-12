@@ -36,17 +36,8 @@ function temperatureChange(c) {
   console.log("F = " + c * 33.8);
   console.log("K = " + c * 274.14);
 }
-console.log("Bài 1: ");
 rectangle();
-console.log("---------------");
-console.log("Bài 2: ");
 circle();
-console.log("---------------");
-console.log("Bài 3: ");
 pt();
-console.log("---------------");
-console.log("Bài 4: ");
 changeUnit();
-console.log("---------------");
-console.log("Bài 5: ");
 temperatureChange();
