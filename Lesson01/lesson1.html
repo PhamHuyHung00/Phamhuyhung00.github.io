@@ -1,13 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <script src="./main.js"></script>
-    <h1>Phạm Huy Hùng</h1>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <style>
+      .menu1 {
+        position: relative;
+        display: inline-block;
+      }
+
+      .menu-item {
+        background-color: #4caf50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .menu-sub {
+        display: none;
+        position: absolute;
+        background-color: #3e8e41;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+      .menu-sub a {
+        color: white;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+    
+    </style>
+
+    <div class=" menu1">
+      <div class="menu-item">Dropdown</div>
+      <div class="menu-sub">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    </div>
+
+
+    <script>
+      jQuery.fn.extend({
+        setMenu: function () {
+          return this.each(function () {
+            let $menu = $(this);
+
+            let itemmenu = $menu.find(".menu-item");
+            itemmenu.click(function () {
+              let submenuitem = $menu.find(".menu-sub");
+              submenuitem.slideToggle(500);
+            });
+
+            $(document).click(function (e) {
+              if (
+                !$menu.is(e.target) &&
+                $menu.has(e.target).length === 0
+              ) {
+                let isopened = $menu
+                  .find(".menu-sub")
+                  .css("display");
+
+                if (isopened == "block") {
+                  $menu.find(".menu-sub").slideToggle(500);
+                }
+              }
+            });
+          });
+        },
+      });
+
+      $(".menu1").setMenu();
+    </script>
+  </body>
 </html>

@@ -1,0 +1,17 @@
+p{
+    color: red;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+}
+[data-toggle='model'] {
+    padding: 15px 25px;
+    border: 2px solid gray;
+    background-color: bisque;
+    color: blue;
+}
+[data-title]{
+    color: red;
+}

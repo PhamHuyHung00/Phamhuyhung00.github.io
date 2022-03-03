@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    padding: 100px 0;
+    padding: 100px 30px;
+    background-color: white;
+}
+[data-toggle='model'] {
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border: 2px solid gray;
+    background-color: bisque;
+    color: blue;
+}
+[data-title]{
+    color: red;
+}
+.container.box {
+    box-shadow:1px 1px 10px 0 rgba(0, 0, 0, 0.5) ;
+}

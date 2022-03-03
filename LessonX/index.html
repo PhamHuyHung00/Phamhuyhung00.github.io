@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link  rel="stylesheet" href="./index.css" />
+    <link id="color-skin" rel="stylesheet" href="./index.html">
+    <title>Javascript DOM</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Javascript DOM</h1>
+      <div id="demo">Id demo</div>
+
+      <div class="demo" data-title ="Test1">class demo1</div>
+      <div class="demo" data-title ="Test2">class demo2</div>
+      <div class="demo" data-title="Test3">class demo3</div>
+      <div class="demo">class demo4</div>
+
+      <p>Cách hiểu này khiến cho cách phân đoạn thiếu tính khách quan. Với cách hiểu này, diện mạo đoạn văn không được xác định (đoạn văn bắt đầu từ đâu, như thế nào, các câu văn trong đoạn có mối liên kết với nhau như thế nào,…) </p>
+      <p>Cách hiểu này khiến cho cách phân đoạn thiếu tính khách quan. Với cách hiểu này, diện mạo đoạn văn không được xác định (đoạn văn bắt đầu từ đâu, như thế nào, các câu văn trong đoạn có mối liên kết với nhau như thế nào,…) </p>
+
+     
+
+      <button onclick="changeStyleColor('./style-1.css')" style="background-color: blue; color: aliceblue;" data-toggle="model">Click</button>
+      <button onclick="changeStyleColor('./style-2.css')" style="background-color: red; color: aliceblue;" data-toggle="model">Click</button><br>
+
+      
+       <button onclick="changeStyleContainer('wide')" style="background-color: greenyellow; color: aliceblue;" data-toggle="model">wide</button>
+        <button onclick="changeStyleContainer('box')" style="background-color: gray; color: aliceblue;" data-toggle="model">box</button><br>
+        <button onclick="changeBg('img/a1.jpg')" data-toggle="model">Hinh 1</button>
+         <button onclick="changeBg('img/a2.jpg')" data-toggle="model"> Hinh 2</button>
+          <button onclick="changeBg()" data-toggle="model">Khong hinh</button>
+
+
+    </div>
+    <!-- <script src="./main-1.js"></script> -->
+    <!-- <script src="./main-2.js"></script> -->
+    <!-- <script src="./main-3.js"></script> -->
+    <script src="./main-4.js"></script>
+  </body>
+</html>
