@@ -1,151 +1,139 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
-
+#od-site {
+  background-color: #094AB2; 
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-size: 24pt;
+  font-family: 'Segoe UI Light', sans-serif;
+  margin-bottom: 10px; 
+  padding-left: 10px;
 }
-header {
-  background-color: black;
-  height: 56px;
-}
-header .banner {
-  width: 1520px;
-}
-nav {
-  width: 1520px;
-  height: 60px;
-  background-color: black;
+#od-commands {
+  float: right;
+  margin-right: 10pt;
 }
 
-nav .logo img {
-  width: 120px;
-  height: 60px;
+#od-commands a {
+  text-decoration: none;
+  color: white;
+  font-size: 12pt;
+}
+
+#od-json {
+  float: right;
+  max-width: 40%;
+}
+
+#od-items {
+  max-width: 60%;
   float: left;
-  margin-left: 70px;
 }
-nav .menu {
+
+#od-breadcrumb {
+  margin-bottom: 1em;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 16pt;
+}
+
+#od-breadcrumb a {
+    text-decoration: none;
+    color: black;
+}
+
+#od-loading {
+  background: rgba(255,255,255,.8) url('spinner_grey_40_transparent.gif') 50% 50% no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  display: none;
+}
+
+body.loading #od-loading {
+  display: block;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.item {
   display: inline-block;
-  margin-top: 20px;
-  margin-left: 30px;
-
-}
-nav .menu a {
-  text-decoration: none;
-  font-size: 18px;
-  padding-left: 10px;
-  color:#fed100; 
-  font-weight: bold;
-}
-nav .menu .fas, .far, span {
-  padding-left: 80px;
-}
-nav .menu a:hover{
-  color: aqua;
-}
-section{
-  margin-top: 5px;
-  width: 1100px;
-  height: 1400px;
-  background-color: #fed100;
-  float: left;
-}
-section .content{
-  width: 250px;
-  height: 430px;
-  background-color: white;
-  display: inline-table ;
-  margin-top: 13px;
-  margin-left: 17px;
-  border-radius: 10px;
-
-}
-section .content img{
-  width: 240px;
-  padding-top: 50px;
-  padding-left: 10px;
-}
-section .content h2{
-  padding-top: 40px;
-  padding-left: 20px;
-  font-size: 19px;
-  font-weight: normal;
-  color: gray;
-}
-section .content p{
-  font-family: arial;
-  font-size: 12px;
-  padding-left: 18px;
-  padding-top: 10px;
-  
-}
-section .content .money{
-  font-weight: bold;
-  color: #222222;
-  font-size: 15px;
-}
-section .content p:hover{
-  color: cornflowerblue;
-}
-section .content h2:hover{
-  color: fuchsia;
-}
-aside{
-  width: 400px;
-  float: left;
-  margin-top: 6px;
-  padding-left: 15px;
-}
-footer{
-  width: 1520px;
-  height: 250px;
-  clear: both;
-  border-top: 2px solid gray;
-  background-color: #fed100;
-}
-footer .support{
-  padding:15px 18px;
-  position: absolute;
-}
-footer .support ul{
-  list-style-type: none;
-
-}
-footer .support ul li{
-  padding-top: 8px;
-}
-footer .support ul li a{
-  text-decoration: none;
-  font-size: 17px;
-  color: gray;
-  font-weight: 700;
-}
-footer .hidden{
+  width: 200px;
+  height: 150px;
+  margin: 0.1em;
+  margin-top: 0.05em;
+  margin-bottom: 0.05em;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 95%, 1);
+  border: 1px solid #094AB2;
+  overflow: hidden;
   position: relative;
-  left: 400px;
-  top: -140px;
-}
-footer .footer_call{
-  position: relative;
-  left: 800px;
-  top: -280px;
-}
-footer .footer_link{
-  position: relative;
-  margin-left: 1100px;
-  margin-top: 50px;
-}
-footer .footer_link img{
-  width: 60px;
-  margin-top: 50px;
-  position: relative;
-  left: 170px;
+  font-family: 'segoe ui';
+  font-size: 12pt;
 }
 
+.nameplate {
+    /* background-color: #094AB2; */
+    /* width: 200px; */
+    height: 16pt;
+    padding: 1px;
+    position: absolute;
+    bottom: 2px;
+    left:  4px;
+    white-space: nowrap;
+    padding-right: 4px;
+    overflow:  hidden;
+    right:  4px;
+}
 
+.folder {
+  background-color: #094AB2;
+  color: white;
+}
 
+.file {
+  color: black;
+}
 
+img {
+  height:auto;
+  width: auto;
+  max-width:200px;
+  /* max-height:150px; */
+  /* height:  150px; */
+  overflow: hidden;
+  /* visibility: hidden; */
+}
 
+.img-container {
+  max-height: 126px;
+  overflow: hidden;
+}
 
+.oneup {
+  width:  auto;
+  height: auto;
+  max-width:  1600px;
+  max-height: 1200px;
+  min-width:  200px;
+  min-height: 150px;
+}
 
+.oneup img {
+  max-width: 1600px;
+  max-height: 1200px;
+}
 
+.hidden {
+  display: none;
+}
+
+pre {outline: 1px solid #ccc;padding: 5px;margin: 5px;overflow: scroll;height: 600px;white-space: pre;}
+.string { color: blue; }
+.number { color: red; }
+.boolean { color: green; }
+.null { color: magenta; }
+.key { color: black; }
